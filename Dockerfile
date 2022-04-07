@@ -1,5 +1,5 @@
 FROM quay.io/wakaba/docker-perl-app-base
 
-CMD ["bash"]
+RUN cd /app && ./perl local/bin/pmbp.pl --install-commands docker
 
 ## License: Public Domain.
