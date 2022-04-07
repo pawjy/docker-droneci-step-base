@@ -1,0 +1,17 @@
+{
+  "circleci": {
+    "docker-build": [
+      {"name":"quay.io/wakaba/droneci-step-base", "path":"."}
+    ],
+    "build": [
+    ],
+    "tests": [
+      "docker run -it quay.io/wakaba/droneci-step-base true",
+      
+      "true"
+    ],
+    "merger": true,
+    "gaa": true,
+    "autobuild": true
+  }
+}
