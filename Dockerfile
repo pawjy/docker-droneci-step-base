@@ -4,7 +4,7 @@ RUN cd /app && ./perl local/bin/pmbp.pl \
     --execute-system-package-installer --dump-info-file-before-die \
     --install-commands docker
 
-RUN apt-get install -y pip &&
+RUN apt-get install -y pip && \
     (pip install awscli --upgrade || pip3 install awscli --upgrade)
 
 ## License: Public Domain.
