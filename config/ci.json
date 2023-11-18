@@ -6,7 +6,7 @@
     "build": [
     ],
     "tests": [
-      "docker run -it quay.io/wakaba/droneci-step-base true",
+      "docker run -i quay.io/wakaba/droneci-step-base true",
       
       {"docker_push":"quay.io/wakaba/droneci-step-base"},
       "true"
