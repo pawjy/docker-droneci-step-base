@@ -3,8 +3,6 @@
     "build": [
       {"docker_build":"quay.io/wakaba/droneci-step-base", "path":"."}
     ],
-    "build": [
-    ],
     "tests": [
       "docker run -i quay.io/wakaba/droneci-step-base true",
       

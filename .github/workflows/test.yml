@@ -98,6 +98,9 @@
                "run" : "mkdir -p $CIRCLE_ARTIFACTS"
             },
             {
+               "run" : "docker build -t quay\u005C.io\u005C/wakaba\u005C/droneci\u005C-step\u005C-base \u005C."
+            },
+            {
                "run" : "docker run -i quay.io/wakaba/droneci-step-base true"
             },
             {
@@ -138,7 +141,7 @@
       },
       "schedule" : [
          {
-            "cron" : "56 21 * * *"
+            "cron" : "34 21 * * *"
          }
       ]
    }
